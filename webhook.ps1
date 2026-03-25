@@ -15,3 +15,4 @@ Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $jsonPayload -ContentType 
 Write-Host "Sent Webhook"
 echo "Sent Webhook"
 echo "HI"
+echo "HI " | Out-File logs.txt # found this pretty cool that u can make it create a text file and log that
