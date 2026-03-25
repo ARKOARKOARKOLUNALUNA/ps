@@ -13,3 +13,5 @@ $payload = @{
 $jsonPayload = $payload | ConvertTo-Json -Depth 10
 Invoke-RestMethod -Uri $webhookUrl -Method Post -Body $jsonPayload -ContentType "application/json"
 Write-Host "Sent Webhook"
+echo "Sent Webhook"
+echo "HI"
